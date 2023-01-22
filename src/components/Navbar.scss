@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #16171a;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    &__logo {
+      margin-left: 25px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 10px;
+    color: #f8ab06;
+    border-radius: 10px;
+  }
+  
+  a:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #f8ab06;
+    color: white;
+  }
+  
+  .stop_link {
+    margin-left: 50px;
+    padding: 15px;
+  }
+  
+  .timer_link {
+    padding: 15px;
+  }
