@@ -1,3 +1,7 @@
+.calc-wrapper {
+  background-color: #20242b;
+}
+
 #calc {
   max-width: 350px;
   height: 520px;
@@ -10,6 +14,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   user-select: none;
   font-family: "Courier New", Courier, monospace;
+  color: #abb2bf;
 }
 
 .history {
