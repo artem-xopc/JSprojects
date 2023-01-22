@@ -1,0 +1,146 @@
+// Переменные фоновых цветов
+$bgColor: #20242b;
+$bgColor1: rgb(47, 51, 58);
+$bgColor2: rgb(21, 43, 80);
+$bgColor3: #000;
+$borderColor: rgb(57, 59, 62);
+
+// Переменные состояний текста
+$textColor: #abb2bf;
+$activeTextColor: #ff9501;
+$tech: #f8ab06;
+$err: #fb0404;
+$disable: #36f008;
+
+// Переменные отступов
+$padding: padding 10px;
+$margin: margin 10px;
+$marginTop: margin-top 50px;
+
+.round__wrapper {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  &__input {
+    display: block;
+    padding: 10px;
+  }
+}
+
+.stopwatch-wrapper {
+  margin: auto;
+  user-select: none;
+}
+
+.stopwatch {
+  display: flex;
+  margin-top: 100px;
+  & { 
+    display: flexbox;
+    width: 120px;
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+    .time {
+      background-color: $bgColor3;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      font-size: 25px;
+    }
+    .label {
+      background-color: $bgColor3;
+      height: 10px;
+      border-bottom: none;
+      color: $tech;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}
+
+.input__text {
+  display: flex;
+  position: relative;
+  left: 240px;
+  justify-items: center;
+  align-items: center;
+  border: none;
+  background-color: $bgColor;
+  color: $textColor;
+  &:disabled {
+    background: none;
+    cursor: not-allowed;
+    color: $err;
+  }
+  &:enabled {
+    &:hover {
+      transition: .3s ease-in-out;
+      color: white;
+    }
+  }
+}
+
+.buttons {
+  cursor: pointer;
+  display: flex;
+  margin: 20px auto;
+  border: none;
+  .btn {
+    font-family: "Courier New", Courier, monospace;
+    user-select: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    transition: 0.3s ease-in-out;
+    &.start {
+      &:hover {
+        background-color: $bgColor2;
+        color: white;
+      }
+    }
+    &.stop {
+      color: $err;
+      &:hover {
+        background-color: $err;
+        color: white;
+      }
+    }
+    &.pause {
+      color: $tech;
+      &:hover {
+        background-color: $tech;
+        color: white;
+      }
+    }
+    &.new {
+      &:disabled {
+        background: none;
+        cursor: not-allowed;
+        color: $err;
+      }
+      &:enabled {
+        &:hover {
+          background-color: $bgColor2;
+          color: white;
+        }
+      }
+    }
+    &.select {
+      &:hover {
+        background-color: $bgColor2;
+        color: white;
+      }
+    }
+  }
+}

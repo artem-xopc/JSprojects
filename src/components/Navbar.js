@@ -14,6 +14,9 @@ import {
 import { Routes, Route, Link } from "react-router-dom";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import Main from "../pages/Main"
+import Stopwatch from "../pages/Stopwatch/stopwatch"
+import Calculator from "../pages/Calculator/calculator"
 
 const NavigatePanel = () => {
   return (
@@ -37,12 +40,12 @@ const NavigatePanel = () => {
         </Container>
       </Navbar>
       <div>
-        {/* <Routes> */}
-          {/* <Route path="/" element={<Main />} /> */}
-          {/* <Route path="/articles" element={<Articles />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} /> */}
-        {/* </Routes> */}
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/calc" element={<Calculator />} />
+          <Route path="/stopwatch" element={<Stopwatch />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
+        </Routes>
       </div>
     </div>
   );

@@ -1,0 +1,129 @@
+#calc {
+  max-width: 350px;
+  height: 520px;
+  padding: 20px;
+  background-color: #000;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  user-select: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.history {
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  padding-right: 10px;
+  height: 20px;
+}
+
+.input {
+  height: 60px;
+  padding: 10px;
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 15px;
+}
+
+.input p {
+  font-size: 2rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.btn_all {
+  display: grid;
+  grid-template-areas:
+    "rad sin cos tan ctg"
+    "clear back fact ln log"
+    "pi per open close divide"
+    "sqrt seven eight nine multi"
+    "reverse four five six plus"
+    "degree one two three minus"
+    "square zero zero dot equal";
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.buttn {
+  width: 45px;
+  height: 45px;
+  color: rgb(171 178 191);
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 19px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#zero {
+  grid-area: zero;
+  width: 100px;
+  border-radius: 40px;
+}
+
+#err {
+  color: rgb(251, 4, 4);
+}
+
+#err:hover {
+  background: rgb(147, 5, 5);
+}
+
+#tech {
+  color: #f8ab06;
+}
+
+.buttn:hover {
+  background-color: rgb(60, 59, 59);
+}
+
+#orange {
+  color: #ff9501;
+}
+
+#orange:active {
+  background: #ff9501;
+  filter: brightness(110%);
+}
+
+.buttn:active {
+  font-size: 15px;
+}
+
+.text_desc {
+  margin: 15px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer_main {
+  margin: 15px;
+  padding: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "desc desc"
+    "footer_content footer_content";
+}
+
+.footer_content {
+  display: block;
+  margin-top: 25px;
+  margin: auto;
+}
+
+.footer_content img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
